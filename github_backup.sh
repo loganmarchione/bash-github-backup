@@ -6,11 +6,11 @@ Usage:
     $0 -l location_of_backup_file -u github_user_name
 
 Arguments:
-    -u
-      GitHub username (e.g., loganmarchione)
-
     -l
       Location where backup tar.gz file will be saved (e.g., /home/logan/test1)
+
+    -u
+      GitHub username (e.g., loganmarchione)
 
 Example:
     $0 -l /home/logan/test1 -u loganmarchione
