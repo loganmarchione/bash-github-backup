@@ -1,0 +1,28 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: "0 5 * * 0"
+  workflow_dispatch:
+
+jobs:
+  lint:
+    name: Lint
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out the codebase
+      uses: actions/checkout@v3
+
+    - name: Install dependencies
+      run: |
+        apt update && apt install -y shellcheck
+        shellcheck --version
+
+    - name: Lint
+      run: |
+        grep -rl '^#!/.*sh' * | xargs -n1 shellcheck
