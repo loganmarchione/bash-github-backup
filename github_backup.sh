@@ -38,9 +38,7 @@ done
 shift $((OPTIND -1))
 
 # Set generic variables
-hostname=$(uname -n)
 datetime=$(date +%Y%m%d_%H%M)
-logfile=/tmp/generate_backups.log
 
 # If arguments aren't set, fail
 if [[ -z "$location" ]] || [[ -z "$username" ]]; then
