@@ -74,7 +74,7 @@ else
 fi
 
 # Make the curl request
-repo_names=$(curl --silent --show-error https://api.github.com/users/"${username}"/repos | jq -r '.[].name')
+repo_names=$(curl --silent --show-error https://api.github.com/users/"${username}"/repos?per_page=100 | jq -r '.[].name')
 
 count_repo_names=$(echo "${repo_names}" | wc -l )
 printf "STATE: Found ${count_repo_names} repos...\n"
