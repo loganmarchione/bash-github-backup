@@ -83,7 +83,7 @@ printf "STATE: Starting backup...\n"
 temp_dir="/tmp/bash-github-backup"
 mkdir -p "${temp_dir}"
 while IFS= read -r line; do
-  git clone --mirror https://github.com/"${username}"/"${line}".git "${temp_dir}"/"${line}"
+  git clone --quiet --mirror https://github.com/"${username}"/"${line}".git "${temp_dir}"/"${line}"
 done <<< "${repo_names}"
 
 printf "STATE: Creating tar.gz file...\n"
