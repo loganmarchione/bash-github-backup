@@ -56,3 +56,4 @@ OR
 - [ ] Test with more than 100 repos (I think this might be an API limit)
 - [x] Add linting
 - [ ] Add backups for issues, wiki, etc...
+- [ ] Check for HTTP response from curl, error based on HTTP code
