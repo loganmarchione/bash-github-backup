@@ -1,6 +1,6 @@
 # bash-github-backup
 
-[![CI](https://github.com/loganmarchione/bash-github-backup/actions/workflows/main.yml/badge.svg)](https://github.com/loganmarchione/bash-github-backup/actions/workflows/main.yml)
+[![Shellcheck](https://github.com/loganmarchione/bash-github-backup/actions/workflows/main.yml/badge.svg)](https://github.com/loganmarchione/bash-github-backup/actions/workflows/main.yml)
 
 Bash script to backup all GitHub repositories for a given username to a tar.gz file.
 
