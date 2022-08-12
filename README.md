@@ -34,9 +34,9 @@ Example:
 
 The repos are cloned with [`--mirror`](https://git-scm.com/docs/git-clone#Documentation/git-clone.txt---mirror), so they are a bare repo. After decompressing, you will not be able to `cd` into each directory and see your files. Instead, you'll see what is normally inside the `.git` directory.
 
-To see your files, you'll need to either
+To see your files, you'll need to either:
 
-- clone the mirrored repo to a new repo (locally):
+- clone the mirrored repo to a new local repo
 
   ```
   git clone mirrored-repo new-repo
