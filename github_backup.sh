@@ -38,7 +38,7 @@ done
 shift $((OPTIND -1))
 
 # Set generic variables
-datetime=$(date +%Y%m%d_%H%M)
+datetime=$(date +%Y-%m-%d)
 
 # If arguments aren't set, fail
 if [[ -z "$location" ]] || [[ -z "$username" ]]; then
@@ -87,7 +87,7 @@ while IFS= read -r line; do
 done <<< "${repo_names}"
 
 printf "STATE: Creating tar.gz file...\n"
-tar -czf "${location}"/github_backup_"${datetime}".tar.gz "${temp_dir}"
+tar -czf "${location}"/"${datetime}"_github_backup.tar.gz "${temp_dir}"
 
 printf "STATE: Deleting temp directory...\n"
 find "${temp_dir}" -type d -prune -exec rm -rf "{}" \;
