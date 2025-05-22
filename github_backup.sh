@@ -44,7 +44,6 @@ datetime=$(date +%Y-%m-%d)
 if [[ -z "$location" ]] || [[ -z "$username" ]]; then
   printf "ERROR: Missing -l or -u, exiting...\n"
   usage
-  exit 1
 else
   printf "STATE: Found arguments, continuing...\n"
 fi
