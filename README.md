@@ -1,6 +1,6 @@
 # bash-github-backup
 
-[![Lint](https://github.com/loganmarchione/bash-github-backup/actions/workflows/main.yml/badge.svg)](https://github.com/loganmarchione/bash-github-backup/actions/workflows/main.yml)
+[![Lint](https://github.com/loganmarchione/bash-github-backup/actions/workflows/lint.yml/badge.svg)](https://github.com/loganmarchione/bash-github-backup/actions/workflows/lint.yml)
 
 Bash script to backup all GitHub repositories for a given username to a `tar.gz` file.
 
